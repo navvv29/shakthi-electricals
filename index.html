@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Shakthi Electricals | Expert Electrical Device Repair — Edavannapara</title>
+  <meta name="description" content="Shakthi Electricals — 25+ years of expert electrical device repair at Edavannapara. Motors, fans, mixers, grinders, drills & more. Trusted one-man craftsmanship." />
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Syne:wght@400;500;600;700;800&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/src/style.css" />
+</head>
+<body>
+  <!-- Noise overlay -->
+  <div class="noise"></div>
+  <!-- Cursor glow -->
+  <div class="cursor-glow" id="cursorGlow"></div>
+
+  <!-- ═══════════ NAVBAR ═══════════ -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-inner">
+      <a href="#home" class="nav-logo">
+        <div class="logo-bolt">⚡</div>
+        <div class="logo-text-wrap">
+          <span class="logo-name">Shakthi</span>
+          <span class="logo-sub">ELECTRICALS</span>
+        </div>
+      </a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home" class="nav-link active">Home</a></li>
+        <li><a href="#services" class="nav-link">Services</a></li>
+        <li><a href="#story" class="nav-link">Story</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+      <a href="tel:+919387409512" class="nav-phone">
+        <div class="phone-ring-pulse"></div>
+        📞 <span class="phone-label">Call Now</span>
+      </a>
+      <button class="hamburger" id="hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Mobile fullscreen menu -->
+  <div class="mobile-menu" id="mobileMenu">
+    <div class="mobile-menu-inner">
+      <ul class="mobile-nav-links">
+        <li style="--d:0"><a href="#home" class="mobile-link">Home</a></li>
+        <li style="--d:1"><a href="#services" class="mobile-link">Services</a></li>
+        <li style="--d:2"><a href="#story" class="mobile-link">Our Story</a></li>
+        <li style="--d:3"><a href="#contact" class="mobile-link">Contact</a></li>
+      </ul>
+      <div class="mobile-bottom">
+        <a href="tel:+919387409512" class="mobile-cta-btn">📞 Call Now</a>
+        <a href="https://wa.me/919387409512" class="mobile-cta-btn mobile-wa" target="_blank" rel="noopener">💬 WhatsApp</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- ═══════════ HERO ═══════════ -->
+  <section class="hero" id="home">
+    <canvas id="circuitCanvas" class="circuit-canvas"></canvas>
+    <!-- Gradient blobs -->
+    <div class="blob blob-1"></div>
+    <div class="blob blob-2"></div>
+    <div class="blob blob-3"></div>
+
+    <div class="hero-wrapper">
+      <div class="hero-left">
+        <div class="hero-tag anim-reveal" style="--delay:0.1s">
+          <span class="tag-dot"></span>
+          Edavannapara's Trusted Repair Expert
+        </div>
+        <h1 class="hero-title">
+          <span class="title-line anim-reveal" style="--delay:0.2s">We Bring Your</span>
+          <span class="title-line title-gradient anim-reveal" style="--delay:0.35s">Devices Back</span>
+          <span class="title-line anim-reveal" style="--delay:0.5s">To <em>Life</em><span class="title-underline"></span></span>
+        </h1>
+        <p class="hero-desc anim-reveal" style="--delay:0.65s">
+          One man. One mission. <strong>25+ years</strong> of expert hands repairing
+          motors, fans, mixers, grinders & every electrical device you trust.
+        </p>
+        <div class="hero-actions anim-reveal" style="--delay:0.8s">
+          <a href="#contact" class="magnetic-btn primary-btn" data-magnetic>
+            <span class="btn-inner">
+              <span>Book a Repair</span>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </span>
+          </a>
+          <a href="https://wa.me/919387409512?text=Hi%2C%20I%20need%20a%20device%20repaired" class="magnetic-btn wa-btn" data-magnetic target="_blank" rel="noopener">
+            <span class="btn-inner">
+              <span>💬 WhatsApp Us</span>
+            </span>
+          </a>
+        </div>
+      </div>
+      <div class="hero-right anim-reveal" style="--delay:0.4s">
+        <div class="hero-orb">
+          <div class="orb-ring orb-ring-1"></div>
+          <div class="orb-ring orb-ring-2"></div>
+          <div class="orb-ring orb-ring-3"></div>
+          <div class="orb-center">
+            <span class="orb-emoji">🔧</span>
+            <span class="orb-num">25+</span>
+            <span class="orb-label">YEARS</span>
+          </div>
+          <div class="orbit-icon" style="--angle:0deg;--dist:48%"><span>⚙️</span></div>
+          <div class="orbit-icon" style="--angle:72deg;--dist:48%"><span>🌀</span></div>
+          <div class="orbit-icon" style="--angle:144deg;--dist:48%"><span>🔌</span></div>
+          <div class="orbit-icon" style="--angle:216deg;--dist:48%"><span>💡</span></div>
+          <div class="orbit-icon" style="--angle:288deg;--dist:48%"><span>🛠️</span></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Scrolling marquee -->
+    <div class="marquee">
+      <div class="marquee-track">
+        <span>MOTORS ✦ FANS ✦ MIXERS ✦ GRINDERS ✦ DRILLS ✦ PUMPS ✦ IRON BOX ✦ HEATERS ✦ GENERATORS ✦ WASHING MACHINES ✦ WATER PURIFIERS ✦ VACUUM CLEANERS ✦ POWER TOOLS ✦&nbsp;</span>
+        <span>MOTORS ✦ FANS ✦ MIXERS ✦ GRINDERS ✦ DRILLS ✦ PUMPS ✦ IRON BOX ✦ HEATERS ✦ GENERATORS ✦ WASHING MACHINES ✦ WATER PURIFIERS ✦ VACUUM CLEANERS ✦ POWER TOOLS ✦&nbsp;</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════ SERVICES ═══════════ -->
+  <section class="services" id="services">
+    <div class="container">
+      <div class="sec-head reveal">
+        <span class="sec-badge">What We Fix</span>
+        <h2 class="sec-title">Every Device Deserves<br/><span class="text-gradient">a Second Chance</span></h2>
+        <p class="sec-subtitle">If it runs on electricity, we can fix it. Here are the devices we repair every day.</p>
+      </div>
+      <div class="bento">
+        <div class="bento-item bento-lg reveal" data-tilt>
+          <div class="bento-shine"></div>
+          <span class="bento-emoji">⚙️</span>
+          <h3>Motors</h3>
+          <p>Rewinding, bearing replacement & full restoration — ceiling fans, table fans, exhaust, industrial motors, submersible pump motors.</p>
+          <span class="bento-badge">Most Popular</span>
+        </div>
+        <div class="bento-item reveal" data-tilt>
+          <div class="bento-shine"></div>
+          <span class="bento-emoji">🌀</span>
+          <h3>Fans</h3>
+          <p>Ceiling, table, pedestal & exhaust fans. Speed issues, noise, wobble, winding — all fixed.</p>
+        </div>
+        <div class="bento-item reveal" data-tilt>
+          <div class="bento-shine"></div>
+          <span class="bento-emoji">🔄</span>
+          <h3>Mixers & Grinders</h3>
+          <p>Mixer grinder, wet grinder, juicer — blade, coupler, motor & switch repairs.</p>
+        </div>
+        <div class="bento-item reveal" data-tilt>
+          <div class="bento-shine"></div>
+          <span class="bento-emoji">🔩</span>
+          <h3>Drills & Power Tools</h3>
+          <p>Hand drills, hammer drills, angle grinders, sanders — armature, carbon brush & chuck replacement.</p>
+        </div>
+        <div class="bento-item bento-wide reveal" data-tilt>
+          <div class="bento-shine"></div>
+          <span class="bento-emoji">💧</span>
+          <h3>Water Pumps</h3>
+          <p>Submersible, centrifugal, self-priming & monoblock pumps — impeller, mechanical seal & coil rewinding.</p>
+        </div>
+        <div class="bento-item reveal" data-tilt>
+          <div class="bento-shine"></div>
+          <span class="bento-emoji">👕</span>
+          <h3>Iron Box & Heaters</h3>
+          <p>Steam irons, dry irons, room heaters, water heaters — element replacement & thermostat repair.</p>
+        </div>
+        <div class="bento-item reveal" data-tilt>
+          <div class="bento-shine"></div>
+          <span class="bento-emoji">🌊</span>
+          <h3>Washing Machines</h3>
+          <p>Semi-auto & top-load washing machines — motor, timer, drain pump & capacitor repair.</p>
+        </div>
+        <div class="bento-item bento-accent reveal" data-tilt>
+          <div class="bento-shine"></div>
+          <span class="bento-emoji">⚡</span>
+          <h3>Any Other Device</h3>
+          <p>Generators, vacuum cleaners, food processors, sewing machines, UPS — <strong>if it's electrical, bring it in.</strong></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════ STATS STRIP ═══════════ -->
+  <section class="stats-strip">
+    <div class="container">
+      <div class="stats-row">
+        <div class="stat reveal">
+          <div class="stat-num" data-count="25" data-suffix="+">0</div>
+          <div class="stat-desc">Years of<br/>Experience</div>
+        </div>
+        <div class="stat-sep"></div>
+        <div class="stat reveal">
+          <div class="stat-num" data-count="10000" data-suffix="+">0</div>
+          <div class="stat-desc">Devices<br/>Repaired</div>
+        </div>
+        <div class="stat-sep"></div>
+        <div class="stat reveal">
+          <div class="stat-num no-count">1</div>
+          <div class="stat-desc">Dedicated<br/>Craftsman</div>
+        </div>
+        <div class="stat-sep"></div>
+        <div class="stat reveal">
+          <div class="stat-num" data-count="100" data-suffix="%">0</div>
+          <div class="stat-desc">Percent<br/>Passion</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════ STORY ═══════════ -->
+  <section class="story" id="story">
+    <div class="container">
+      <div class="story-grid">
+        <div class="story-left reveal">
+          <div class="story-visual-card">
+            <div class="sv-inner">
+              <div class="sv-icon">🔧</div>
+              <div class="sv-big">25+</div>
+              <div class="sv-sub">Years of Trust</div>
+            </div>
+            <div class="sv-glow"></div>
+          </div>
+          <div class="story-chips">
+            <span class="s-chip reveal">🎯 Honest Pricing</span>
+            <span class="s-chip reveal">⚡ Quick Turnaround</span>
+            <span class="s-chip reveal">🛡️ Repair Warranty</span>
+            <span class="s-chip reveal">🤝 Personal Attention</span>
+          </div>
+        </div>
+        <div class="story-right reveal">
+          <span class="sec-badge">Our Story</span>
+          <h2 class="sec-title">One Man.<br/><span class="text-gradient">Decades of Mastery.</span></h2>
+          <p class="story-para">
+            For over <strong>25 years</strong>, a single craftsman has been the person
+            Edavannapara turns to when electrical devices stop working. What began as a
+            humble repair bench has grown into the community's most trusted name in
+            electrical repair.
+          </p>
+          <p class="story-para">
+            From a ceiling fan that won't spin to an industrial motor that needs
+            rewinding — every device that enters this shop leaves working like new.
+            That's not just a promise, it's a <strong>legacy built on decades of dedication</strong>.
+          </p>
+          <p class="story-para">
+            No middlemen, no showroom overhead — just one skilled pair of hands,
+            honest pricing, and a deep understanding of how every electrical device works.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════ PROCESS ═══════════ -->
+  <section class="process">
+    <div class="container">
+      <div class="sec-head reveal">
+        <span class="sec-badge">Simple Process</span>
+        <h2 class="sec-title">How It <span class="text-gradient">Works</span></h2>
+      </div>
+      <div class="steps">
+        <div class="step reveal">
+          <div class="step-num">01</div>
+          <h3>Bring Your Device</h3>
+          <p>Walk into the shop or give us a call. Bring any broken electrical device.</p>
+        </div>
+        <div class="step-arrow reveal">→</div>
+        <div class="step reveal">
+          <div class="step-num">02</div>
+          <h3>Free Diagnosis</h3>
+          <p>We inspect & diagnose the issue. Honest cost estimate — no hidden charges.</p>
+        </div>
+        <div class="step-arrow reveal">→</div>
+        <div class="step reveal">
+          <div class="step-num">03</div>
+          <h3>Expert Repair</h3>
+          <p>Using quality parts and 25+ years experience, your device is repaired.</p>
+        </div>
+        <div class="step-arrow reveal">→</div>
+        <div class="step reveal">
+          <div class="step-num">04</div>
+          <h3>Pick Up & Go</h3>
+          <p>Tested, verified, and ready — pick up your device with a repair warranty.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════ CONTACT ═══════════ -->
+  <section class="contact" id="contact">
+    <div class="container">
+      <div class="contact-grid">
+        <div class="contact-left reveal">
+          <span class="sec-badge">Get In Touch</span>
+          <h2 class="sec-title">Device Not<br/><span class="text-gradient">Working?</span></h2>
+          <p class="contact-desc">Drop by the shop, give us a call, or send a message via WhatsApp. We'll get your device running again.</p>
+          <div class="contact-chips">
+            <a href="tel:+919387409512" class="cc" data-tilt>
+              <span class="cc-icon">📞</span>
+              <div><strong>Call Directly</strong><span>+91 93874 09512</span></div>
+            </a>
+            <a href="https://wa.me/919387409512" class="cc" target="_blank" rel="noopener" data-tilt>
+              <span class="cc-icon">💬</span>
+              <div><strong>WhatsApp</strong><span>Chat with us</span></div>
+            </a>
+            <div class="cc" data-tilt>
+              <span class="cc-icon">📍</span>
+              <div><strong>Visit Shop</strong><span>Main Road, Edavannapara<br/>Malappuram, Kerala</span></div>
+            </div>
+            <div class="cc" data-tilt>
+              <span class="cc-icon">⏰</span>
+              <div><strong>Working Hours</strong><span>Mon – Sat: 8 AM – 7 PM<br/>Sunday: Closed</span></div>
+            </div>
+          </div>
+        </div>
+        <div class="contact-right reveal">
+          <form class="contact-form" id="contactForm">
+            <h3 class="form-heading">Send us a message via WhatsApp</h3>
+            <p class="form-note">Fill in the details below — we'll open WhatsApp with your message ready to send.</p>
+            <div class="field">
+              <input type="text" id="fname" name="name" placeholder=" " required autocomplete="name" />
+              <label for="fname">Your Name *</label>
+            </div>
+            <div class="field">
+              <input type="tel" id="fphone" name="phone" placeholder=" " required autocomplete="tel" />
+              <label for="fphone">Phone Number *</label>
+            </div>
+            <div class="field field-select">
+              <label for="fdevice" class="select-label">Device Type *</label>
+              <select id="fdevice" name="device" required>
+                <option value="">— Choose a device —</option>
+                <option value="Motor">Motor (any type)</option>
+                <option value="Fan">Fan (ceiling, table, exhaust)</option>
+                <option value="Mixer / Grinder">Mixer / Grinder</option>
+                <option value="Drill / Power Tool">Drill / Power Tool</option>
+                <option value="Water Pump">Water Pump</option>
+                <option value="Iron Box">Iron Box / Heater</option>
+                <option value="Washing Machine">Washing Machine</option>
+                <option value="Generator">Generator / UPS</option>
+                <option value="Other Device">Other Device</option>
+              </select>
+            </div>
+            <div class="field">
+              <textarea id="fmessage" name="message" placeholder=" " rows="3" required></textarea>
+              <label for="fmessage">Describe the problem *</label>
+            </div>
+            <button type="submit" class="submit-btn magnetic-btn" data-magnetic id="submitBtn">
+              <span class="btn-inner">
+                <span>Send via WhatsApp</span>
+                <span>💬</span>
+              </span>
+            </button>
+            <div class="form-msg" id="formMsg"></div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════ FOOTER ═══════════ -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="#home" class="nav-logo">
+            <div class="logo-bolt">⚡</div>
+            <div class="logo-text-wrap">
+              <span class="logo-name">Shakthi</span>
+              <span class="logo-sub">ELECTRICALS</span>
+            </div>
+          </a>
+          <p>Expert electrical device repair at Edavannapara. Trusted one-man repair shop with 25+ years of experience.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Quick Links</h4>
+          <a href="#home">Home</a>
+          <a href="#services">Services</a>
+          <a href="#story">Our Story</a>
+          <a href="#contact">Contact</a>
+        </div>
+        <div class="footer-col">
+          <h4>We Repair</h4>
+          <a href="#services">Motors & Fans</a>
+          <a href="#services">Mixers & Grinders</a>
+          <a href="#services">Drills & Power Tools</a>
+          <a href="#services">Pumps & More</a>
+        </div>
+        <div class="footer-col">
+          <h4>Contact</h4>
+          <a href="tel:+919387409512">📞 +91 9387409512</a>
+          <a href="https://wa.me/919387409512" target="_blank" rel="noopener">💬 WhatsApp</a>
+          <span>📍 Edavannapara,  Cheruvayoor Post. 673645, Malappuram District,Kerala</span>
+          <span>⏰ Mon-Sat: 8AM-7PM</span>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2026 Shakthi Electricals • All rights reserved</p>
+        <p>Crafted with ⚡ at Edavannapara</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to top -->
+  <button class="back-top" id="backTop" aria-label="Back to top">↑</button>
+
+  <script type="module" src="./src/main.js"></script>
+</body>
+</html>
